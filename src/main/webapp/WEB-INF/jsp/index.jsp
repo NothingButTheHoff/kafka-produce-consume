@@ -81,6 +81,7 @@
     <div>
         <button id="disconnect" disabled="disabled" onclick="disconnect();">Disconnect</button>
         <br />
+        <br />
         Refresh to reconnect
     </div>
     <br />
