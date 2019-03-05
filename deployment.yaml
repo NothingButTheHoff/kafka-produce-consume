@@ -1,0 +1,30 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: kafka-messaging
+spec:
+  replicas: 1
+  selector:
+    matchLabels:
+      app: kafka-messaging
+  template:
+    metadata:
+      labels:
+        app: kafka-messaging
+    spec:
+      containers:
+      - env:    
+        - name: CLOUDKARAFKA_BROKERS
+          value: *************
+        - name: CLOUDKARAFKA_USERNAME
+          value: *************
+        - name: CLOUDKARAFKA_PASSWORD
+          value: *************
+        - name: CLOUDKARAFKA_TOPIC_PREFIX
+          value: *************
+        image: kafka-messaging:latest
+        name: kafka-messaging
+        imagePullPolicy: Never
+        ports:
+        - containerPort: 8080     
+        

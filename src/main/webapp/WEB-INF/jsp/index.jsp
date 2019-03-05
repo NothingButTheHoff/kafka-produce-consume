@@ -1,4 +1,4 @@
-<%@ page contentType="text/html;charset=UTF-8" language="java" %>
+<%@ page contentType="text/html;charset=UTF-8" %>
 <%@ taglib prefix="form" uri="http://www.springframework.org/tags/form"%>
 
 <html>
@@ -80,6 +80,8 @@
 <div>
     <div>
         <button id="disconnect" disabled="disabled" onclick="disconnect();">Disconnect</button>
+        <br />
+        Refresh to reconnect
     </div>
     <br />
     <div id="conversationDiv">

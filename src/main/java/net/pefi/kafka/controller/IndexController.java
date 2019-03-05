@@ -10,7 +10,7 @@ public class IndexController {
 
     @GetMapping("/")
     public ModelAndView index(ModelAndView mav) {
-        mav.setViewName("/index");
+        mav.setViewName("index");
         return mav;
     }
 
