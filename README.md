@@ -62,7 +62,7 @@ Set environment variables in `deployment.yaml file
 `$ minikube service kafka-messaging` open the running app in default browser
 
 
-#####Clean up
+##### Clean up
 
 `$ kubectl delete service kafka-messaging`
 
